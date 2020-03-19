@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,12 @@
 		822CC5FE2423556900A29680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822CC5FC2423556900A29680 /* Main.storyboard */; };
 		822CC6002423556C00A29680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822CC5FF2423556C00A29680 /* Assets.xcassets */; };
 		822CC6032423556C00A29680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822CC6012423556C00A29680 /* LaunchScreen.storyboard */; };
+		822CC613242356D500A29680 /* UIBezierPath+WeightedPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CC60D242356D500A29680 /* UIBezierPath+WeightedPoint.swift */; };
+		822CC614242356D500A29680 /* SignatureDrawingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CC60E242356D500A29680 /* SignatureDrawingModel.swift */; };
+		822CC615242356D500A29680 /* SignatureDrawingModelAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CC60F242356D500A29680 /* SignatureDrawingModelAsync.swift */; };
+		822CC616242356D500A29680 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CC610242356D500A29680 /* CGPoint+Extensions.swift */; };
+		822CC617242356D500A29680 /* SignatureBezierProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CC611242356D500A29680 /* SignatureBezierProvider.swift */; };
+		822CC618242356D500A29680 /* SignatureDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CC612242356D500A29680 /* SignatureDrawingViewController.swift */; };
 		AB9C5265C64C0BB8D3A87E99 /* Pods_UberSignature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBEE31CECB70939EA06010B /* Pods_UberSignature.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +34,12 @@
 		822CC5FF2423556C00A29680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		822CC6022423556C00A29680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		822CC6042423556C00A29680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822CC60D242356D500A29680 /* UIBezierPath+WeightedPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+WeightedPoint.swift"; sourceTree = "<group>"; };
+		822CC60E242356D500A29680 /* SignatureDrawingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureDrawingModel.swift; sourceTree = "<group>"; };
+		822CC60F242356D500A29680 /* SignatureDrawingModelAsync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureDrawingModelAsync.swift; sourceTree = "<group>"; };
+		822CC610242356D500A29680 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		822CC611242356D500A29680 /* SignatureBezierProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureBezierProvider.swift; sourceTree = "<group>"; };
+		822CC612242356D500A29680 /* SignatureDrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignatureDrawingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,7 @@
 		822CC5EA2423556900A29680 = {
 			isa = PBXGroup;
 			children = (
+				822CC60A2423568D00A29680 /* Libraries */,
 				822CC5F52423556900A29680 /* UberSignature */,
 				822CC5F42423556900A29680 /* Products */,
 				A72D3D0B129EC93B077E1804 /* Pods */,
@@ -82,13 +95,41 @@
 			path = UberSignature;
 			sourceTree = "<group>";
 		};
+		822CC60A2423568D00A29680 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				822CC60B242356D500A29680 /* UberSignature */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		822CC60B242356D500A29680 /* UberSignature */ = {
+			isa = PBXGroup;
+			children = (
+				822CC60C242356D500A29680 /* Internal */,
+				822CC612242356D500A29680 /* SignatureDrawingViewController.swift */,
+			);
+			path = UberSignature;
+			sourceTree = "<group>";
+		};
+		822CC60C242356D500A29680 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				822CC60D242356D500A29680 /* UIBezierPath+WeightedPoint.swift */,
+				822CC60E242356D500A29680 /* SignatureDrawingModel.swift */,
+				822CC60F242356D500A29680 /* SignatureDrawingModelAsync.swift */,
+				822CC610242356D500A29680 /* CGPoint+Extensions.swift */,
+				822CC611242356D500A29680 /* SignatureBezierProvider.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
 		A72D3D0B129EC93B077E1804 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				79CE0898434D1F0AB3862F97 /* Pods-UberSignature.debug.xcconfig */,
 				46E7053C5C48495FC5004578 /* Pods-UberSignature.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,8 +248,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822CC616242356D500A29680 /* CGPoint+Extensions.swift in Sources */,
 				822CC5FB2423556900A29680 /* ViewController.swift in Sources */,
 				822CC5F72423556900A29680 /* AppDelegate.swift in Sources */,
+				822CC613242356D500A29680 /* UIBezierPath+WeightedPoint.swift in Sources */,
+				822CC614242356D500A29680 /* SignatureDrawingModel.swift in Sources */,
+				822CC615242356D500A29680 /* SignatureDrawingModelAsync.swift in Sources */,
+				822CC618242356D500A29680 /* SignatureDrawingViewController.swift in Sources */,
+				822CC617242356D500A29680 /* SignatureBezierProvider.swift in Sources */,
 				822CC5F92423556900A29680 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
