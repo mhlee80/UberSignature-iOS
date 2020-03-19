@@ -1,0 +1,6 @@
+xcuserdata/
+Pods/
+.DS_Store
+UberSignature.app.dSYM.zip
+UberSignature.ipa
+UberSignature.xcodeproj/xcuserdata/
